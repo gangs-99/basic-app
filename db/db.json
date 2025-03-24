@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": "3aac",
+      "title": "부산역 기차 타기",
+      "author": "가나다"
+    },
+    {
+      "id": "231e",
+      "title": "태종대 관광 점심",
+      "author": "오소리"
+    },
+    {
+      "id": "ab97",
+      "title": "광안리 구경 저녁",
+      "author": "머지"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "This is a comment1.",
+      "postId": 1
+    },
+    {
+      "id": "2",
+      "body": "This is a comment2.",
+      "postId": 1
+    }
+  ]
+}

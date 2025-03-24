@@ -1,26 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
-import { DiAtom } from "react-icons/di";
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+import HelloWrap from './01_Hello/HelloWrap';
+import MyClockWrap from './02_Clock/MyClockWrap';
+import LottoWrap from './05_Lotto/LottoWrap';
+import TrafficWrap from './06_Traffic/TrafficWrap';
+import MyRefAddWrap from './07_MyRef/MyRefAddWrap';
+import GalleryWrap from './08_Gallery/GalleryWrap';
+import PracticeWrap from './00_Navigate/PracticeWrap';
+import RestWrap from './11_Rest/RestWrap';
+import AxiosWrap from './12_Axios/RestWrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='bg-slate-500'>
-          Edit <code>src/App.js</code> and save to reload.
-          <DiAtom />
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HelloWrap />} />
+        <Route path='/practice/*' element={<PracticeWrap />} />
+        <Route path="/clock" element={<MyClockWrap />} />
+        <Route path="/lotto" element={<LottoWrap />} />
+        <Route path="/traffic" element={<TrafficWrap />} />
+        <Route path="/myrefadd" element={<MyRefAddWrap />} />
+        <Route path="/gallery" element={<GalleryWrap />} />
+        <Route path="/rest" element={<RestWrap />} />
+        <Route path="/axios" element={<AxiosWrap />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

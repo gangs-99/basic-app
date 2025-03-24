@@ -1,0 +1,31 @@
+.basicDiv {
+    padding: 16px;
+}
+
+.goBack, .goBackDark {
+    color: gray;
+    padding: 5px;
+    border: none;
+    font-size: 12px;
+    background: none;
+}
+.goBack {
+    color: gray;
+}
+.goBackDark {
+    color: #b4b4b4;
+}
+.goBack:hover, .goBackDark:hover {
+    cursor: pointer;
+}
+
+.listItem {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+}
+.listItem:hover {
+    background-color: white;
+    --tw-text-opacity: 1;
+    color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+}
